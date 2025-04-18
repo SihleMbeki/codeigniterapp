@@ -6,16 +6,17 @@
 <body>
     <h2>Sign Up</h2>
     
-    <?php if ($this->session->flashdata('success')): ?>
-        <div class="alert success"><?= $this->session->flashdata('success') ?></div>
-    <?php endif; ?>
-    
-    <?php if ($this->session->flashdata('error')): ?>
-        <div class="alert error"><?= $this->session->flashdata('error') ?></div>
-    <?php endif; ?>
+    <?php $CI =& get_instance(); ?>
+
+<?php if ($CI->session->flashdata('success')): ?>
+    <div class="alert success"><?= $CI->session->flashdata('success') ?></div>
+<?php endif; ?>
+
+<?php if ($CI->session->flashdata('error')): ?>
+    <div class="alert error"><?= $CI->session->flashdata('error') ?></div>
+<?php endif; ?>
     
     <?= form_open('signup') ?>
-        <?= csrf_field() ?>
         
         <div>
             <label>Username:</label>
