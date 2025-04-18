@@ -53,3 +53,19 @@ $route['default_controller'] = 'signup';
 $route['signup'] = 'signup';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+/*
+<?php
+$route['profile/view/(:num)'] = 'ProfileController/view/$1'; // Accepts only numeric IDs
+$route['profile/view/(:any)/(:any)'] = 'ProfileController/view/$1/$2'; // Accepts two parameters
+$route['profile/edit/(:num)'] = 'ProfileController/edit/$1'; // Edit profile by ID
+$route['profile/delete/(:num)'] = 'ProfileController/delete/$1'; // Delete profile by ID
+<?php
+$route['profile/update/(:num)'] = 'ProfileController/update/$1'; // Updates a profile by ID
+
+<?php
+$route['profile/view/(:num)'] = 'ProfileController/view/$1';
+$route['profile/edit/(:num)'] = 'ProfileController/edit/$1';
+$route['profile/update/(:num)'] = 'ProfileController/update/$1';
+$route['profile/delete/(:num)'] = 'ProfileController/delete/$1';
+*/
