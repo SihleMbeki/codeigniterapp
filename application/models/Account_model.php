@@ -1,9 +1,12 @@
 <?php
+
 class Account_model extends CI_Model {
     public function __construct() {
         parent::__construct();
         $this->load->database();
     }
+    public CI_DB_mysqli_driver $failover;
+    public $db       = [];
 
     public function create_user($username, $password, $token) {
         $data = [

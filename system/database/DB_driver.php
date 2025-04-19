@@ -59,7 +59,7 @@ abstract class CI_DB_driver {
 	 * @var	string
 	 */
 	public $dsn;
-
+    public  $failover=[];
 	/**
 	 * Username
 	 *

@@ -1,6 +1,5 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 class Signup extends CI_Controller {
 
     	/**
@@ -18,6 +17,21 @@ class Signup extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/userguide3/general/urls.html
      * */
+	public $benchmark    = [];
+    public $hooks     = [];
+    public $config      = [];
+    public $log      = [];
+    public $utf8       = [];
+    public $uri       = [];
+    public $router      = [];
+    public $output      = [];
+    public $security      = [];
+    public $input      = [];
+    public $lang       = [];
+    public $db       = [];
+    public $Account_model;
+    public $form_validation;
+    public $session;
 
     public function __construct() {
         parent::__construct();

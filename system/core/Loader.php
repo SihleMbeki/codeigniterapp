@@ -58,7 +58,25 @@ class CI_Loader {
 	 * @var	int
 	 */
 	protected $_ci_ob_level;
+    public $db       = [];
+	public  $Account_model =null;
+	public  $form_validation  = [];
+	public  $session   =[];
+	public  $load     =[];
+	public  $benchmark      =[];
+	public  $hooks       =[];
+	public  $config        =[];
+	public  $log         =[];
+	public  $utf8          =[];
+	public  $uri           =[];
+	public  $router            =[];
+	public  $output             =[];
+	public  $security              =[];
+	public  $input              =[];
+	public  $lang               =[];
+	public  $model               =[];
 
+	
 	/**
 	 * List of paths to load views from
 	 *
